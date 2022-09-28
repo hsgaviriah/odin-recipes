@@ -1,6 +1,11 @@
+* {
+  border: 1px solid black
+}
+
 body {
   font-family: monospace, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+
 }
 
 h1 {
@@ -11,22 +16,26 @@ h1 {
     0 0 5px darkblue;
 }
 
+
 .list_recipes {
-  text-align: flex-col;
+  list-style: none;
+  width:max-content;
+  margin: 0 auto;
+
 }
+
 
 .image_list {
   border-radius: 10em;
+  width: 6em;
+  height: auto;
+  margin: 0.5em 0.5em;
 }
 
 p {
   text-align: justify;
 }
 
-.steps {
-  text-align: justify;
-  width: 30em;
-}
 .description {
   font-size: 1.2em;
   padding-left: 1.5em;
@@ -38,10 +47,40 @@ h2 {
   text-align: center;
 }
 
-h3, ul {
-  padding-left: 2em;
+h3 {
+  padding-left: 2.5em;
 }
 
+
 a {
+  display: list-item;
   text-decoration: none;
+
 }
+
+.descripcion{
+  display: flex;
+  margin: 1em 3em;
+}
+
+.ingredientes{
+  width: 30em;
+  margin: 0 3em;
+  padding-left: 0;
+}
+
+.pasos {
+  width: 30em;
+  height: auto;
+  margin: 0 2.5em;
+  text-align: justify;
+}
+
+.main_image{
+  height: 20em;
+  width: auto;
+display:block;
+margin:0 auto;
+  
+}
+
